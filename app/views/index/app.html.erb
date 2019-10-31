@@ -1,9 +1,119 @@
-<div class="hero has-background-black-ter is-fullheight">
-	<div class="hero-body">
-	<div class="container">
-	<div class="box has-background-dark has-text-light">
-      halo
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Cheatsheet Concept</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+    <link rel='stylesheet' href='https://kingsora.github.io/OverlayScrollbars/etc/os-theme-thin-dark.css'>
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <section class="hero is-dark header-image">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+              <i class="is-large fas fa-code"></i>
+              <h1 class="title"><em>The Kingdom of Magic</em></h1>
+              <h3 class="subtitle">
+              Make magic with rails
+              </h3>
+              <a href="https://github.com/rokhimin" target="_blank" class="button is-dark is-large">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <section class="hero has-background-black-ter">
+    <hr>
+    </section>
+    <section class="hero has-background-black-ter">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+          <p class="menu-label">
+          
+          </p>
+              <a href="/" class="button is-dark is-center">
+                <span>Home</span>
+              </a>
+          <ul class="menu-list">
+            <li><a href="/" class="button is-dark"></i> Paginate</a></li>
+            <li><a href="/" class="button is-dark"></i> JSON</a></li>
+            <li><a href="/" class="button is-dark"></i> Cloud</a></li>
+          </ul>
+            </aside>
+          </div>
+          <div class="column is-9">
+            <div class="content is-medium">
+          <h3 class="title is-3"> </h3>
+              <div class="box has-background-dark has-text-light">
+                <h3 class="has-text-light">WELCOME</h3>
+                process build
+            </div>
+            
+            <div class="box has-background-dark has-text-light">
+              <article class="message has-background-dark has-text-light">
+                <span class="icon has-text-white">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <div class="message-body has-background-dark has-text-light">
+                  hi.
+                </div>
+              </article>
+          </div>
+          
+          <h3 class="title is-3">Information...</h3>
+          
+          <div class="box has-background-dark has-text-light">
+            <article class="message has-background-dark has-text-light">
+              <span class="icon has-text-white">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <div class="message-body has-background-dark has-text-light">
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+              </div>
+            </article>
+        </div>
+        
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
+</div>
+</section>
+    <section class="hero has-background-black-ter">
+    <hr>  created by rokhimin
+    </section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    
+<script>
+  window.addEventListener('resize', () => {
+  const divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
+  
+  document.addEventListener("DOMContentLoaded", function() {
+	//The first argument are the elements to which the plugin shall be initialized
+	//The second argument has to be at least a empty object or a object with your desired options
+	OverlayScrollbars(document.querySelectorAll("body"), { });
+});
+  
+</script>  
+</body>
+</html>
