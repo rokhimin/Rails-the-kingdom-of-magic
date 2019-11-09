@@ -4,12 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.0'
 
 gem 'rails', '~> 6.0.0'
-gem 'pg'
+gem 'pg', '~> 1.1.4'
 gem 'puma', '~> 3.11'
-gem 'sass-rails'
+gem 'sass-rails', '~> 6.0.0'
 gem 'jbuilder', '~> 2.7'
 gem "bulma-rails", "~> 0.7.5"
-gem "font-awesome-rails"
+gem "font-awesome-rails", "~> 4.7.0.5"
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
