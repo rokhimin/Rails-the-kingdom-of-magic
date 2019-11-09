@@ -4,7 +4,7 @@
     <p class="menu-label is-hidden-touch has-text-light">Navigation</p>
     <ul class="menu-list">
       <li>
-        <a href="#" class="is-active has-background-dark has-text-light">
+        <a href="/" class="has-text-light">
           <span class="icon"><i class="fa fa-home"></i></span> Home
         </a>
       </li>
@@ -15,7 +15,7 @@
 
         <ul>
           <li>
-            <a href="/json-to-hash-ruby" class="has-text-light">
+            <a href="#" class="is-active has-background-dark has-text-light">
               JSON to Hash ruby
             </a>
           </li>
@@ -33,12 +33,29 @@
     <div class="section">
 
       <div class="card has-background-dark has-text-light">
-        <div class="card-header"><p class="card-header-title has-text-light">welcome</p></div>
+        <div class="card-header"><p class="card-header-title has-text-light">JSON to Hash Ruby</p></div>
         <div class="card-content"><div class="content">
-          <figure class="image is-fullwidth">
-          <img src="http://25.media.tumblr.com/tumblr_me3wpiMqsB1runxsho1_500.gif">
-          </figure>
+          
+
+<%= form_tag("app") do %>
+          
+		  <div class="field">
+		  <%= text_area(:json, :field, :class => "textarea") %> 
+		  </div>
+        
+		  <div class="field has-text-centered">
+		  <%= submit_tag("Parse", :class => "button has-background-dark has-text-light") %>
+		  </div>
+
+<% end %>
+        
         </div></div>
+      </div>
+      <br />
+      
+      <div class="card has-background-dark has-text-light">
+        <div class="card-header"><p class="card-header-title has-text-light">Output</p></div>
+        <div class="card-content"><div class="content"></div></div>
       </div>
       <br />
       

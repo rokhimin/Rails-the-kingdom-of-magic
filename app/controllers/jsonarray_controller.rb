@@ -1,4 +1,0 @@
-
-class JsonarrayController < ApplicationController
-  
-end
