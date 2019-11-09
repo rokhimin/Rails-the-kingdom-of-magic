@@ -5,25 +5,7 @@
 
 https://the-kingdom-of-magic.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![](http://25.media.tumblr.com/tumblr_me3wpiMqsB1runxsho1_500.gif)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# License
+MIT License.

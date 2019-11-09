@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TheKingdomOfMagic</title>
+    <title>The Kingdom of Magic</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    <style>
+        /* Chrome, Safari */
+        ::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+        }
+        ::-webkit-scrollbar-track-piece  {
+        background-color: #222222;
+        }
+        ::-webkit-scrollbar-thumb:vertical {
+        height: 30px;
+        background-color: #000;
+        }
+    </style>
   </head>
 
   <body>
+    <div class="hero has-background-black-ter">  
+    <section class="hero header-image">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content has-text-light">
+              <i class="is-large fas fa-code"></i>
+              <h1 class="title has-text-light"><em>The Kingdom of Magic</em></h1>
+              <h3 class="subtitle has-text-light">
+              A magic tool build with rails
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <%= yield %>
+      
+    </div>
+  <footer class="footer has-background-black-ter">
+    <div class="content has-text-centered">
+      <p>
+        <strong>The Kingdom of magic</strong> by <a href="https://github.com/rokhimin">Rokhimin</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC SA 4.0</a>
+      </p>
+    </div>
+  </footer>
   </body>
 </html>
