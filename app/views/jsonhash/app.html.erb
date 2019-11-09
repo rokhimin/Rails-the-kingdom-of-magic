@@ -37,7 +37,7 @@
         <div class="card-content"><div class="content">
           
 
-<%= form_tag("app") do %>
+<%= form_tag("json-to-hash-ruby") do %>
           
 		  <div class="field">
 		  <%= text_area(:json, :field, :class => "textarea") %> 
@@ -55,7 +55,7 @@
       
       <div class="card has-background-dark has-text-light">
         <div class="card-header"><p class="card-header-title has-text-light">Output</p></div>
-        <div class="card-content"><div class="content"></div></div>
+        <div class="card-content"><div class="content"><%= @load %></div></div>
       </div>
       <br />
       
