@@ -11,8 +11,10 @@ https://the-kingdom-of-magic.herokuapp.com
 
 # Todo
 
+- [x] Header
 - [x] Navigation menu
 - [x] JSON to hash ruby
+- [x] Lorem ipsum generator
 
 # License
 MIT License.
