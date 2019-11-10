@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
+  # homepage
   root to: 'index#home'
+  
+  # JSON to hash ruby
   get '/json-to-hash-ruby.rb', to: 'jsonhash#app'
-	post '/json-to-hash-ruby.rb', to: 'jsonhash#parsing'
+  post '/json-to-hash-ruby.rb', to: 'jsonhash#parsing'
+  
+  # Lorem ipsum generator
+  get '/lorem-ipsum-generator.rb', to: 'lorem#app'
+  post '/lorem-ipsum-generator.rb', to: 'lorem#generate'
+  
 end
