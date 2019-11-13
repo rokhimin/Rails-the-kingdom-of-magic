@@ -1,0 +1,191 @@
+<section class="columns has-background-black-ter">
+  
+  <aside class="column is-2 section">
+    <p class="menu-label is-hidden-touch has-text-light">Navigation</p>
+    <ul class="menu-list">
+      <li>
+        <a href="/" class="has-text-light">
+          <span class="icon"><i class="fa fa-home"></i></span> Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="has-text-light">
+          <span class="icon"><i class="fa fa-magic"></i></span> Magic
+        </a>
+
+        <ul>
+          <li>
+            <a href="/json-to-hash-ruby.rb" class="has-text-light">
+              JSON to Hash ruby
+            </a>
+          </li>
+          <li>
+            <a href="/lorem-ipsum-generator.rb" class="has-text-light">
+              Lorem Ipsum generator
+            </a>
+          </li>
+          <li>
+            <a href="/discord-webhook-test.rb" class="is-active has-background-dark has-text-light">
+              Discord webhook test
+            </a>
+          </li>
+          <li>
+            <a href="/slack-webhook-test.rb" class="has-text-light">
+              Slack webhook test
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="container column is-10">
+    <div class="section">
+
+      <div class="card has-background-dark has-text-light">
+        <div class="card-header"><p class="card-header-title has-text-light">Discord webhook test</p></div>
+        <div class="card-content"><div class="content">
+
+		<%= form_tag("discord-webhook-test.rb") do %>
+          
+		  <div class="field">
+		  <label class="label has-text-light">URL webhook<font color="red">*</font></label>
+		  <%= text_field(:url, :field, :class => "input is-blue") %> 
+		  </div>
+		  
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Username</label>
+        <%= text_field(:username, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Avatar url</label>
+        <%= text_field(:avatar_url, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+		  
+		  <div class="field">
+        <label class="label has-text-light">Color</label>
+        <div class="control">
+          <div class="select is-dark">
+           <%= select_tag(:color, options_for_select([["Grey", "0x4a4a4a"],["White", "0xffffff"],["Black", "0x1"],["Red", "0xd0021b"],["Blue", "0x22bd0"],["Green", "0x7ed321"],["Orange", "0xf5a623"],["Purple", "0x9013fe"]], params[:color] )) %>
+          </div>
+        </div>
+		  </div>
+
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Title</label>
+        <%= text_field(:title, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Url Title</label>
+        <%= text_field(:url_title, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+
+		  <div class="field">
+		  <label class="label has-text-light">Desctiption</label>
+		  <%= text_area(:desc, :field, :class => "textarea") %> 
+			</div>
+		  
+		  <div class="field">
+		  <label class="label has-text-light">Image</label>
+      <%= text_field(:image, :field, :class => "input is-blue") %> 
+			</div>
+		  
+		  <div class="field">
+		  <label class="label has-text-light">Thumbnail</label>
+		  <%= text_field(:thumbnail, :field, :class => "input is-blue") %> 
+			</div>
+		 
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Author name</label>
+        <%= text_field(:author_name, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Author url</label>
+        <%= text_field(:author_url, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Author icon url</label>
+        <%= text_field(:author_icon_url, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+		  
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Footer</label>
+        <%= text_field(:footer, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Icon footer</label>
+        <%= text_field(:icon_footer, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+		  
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Field name</label>
+        <%= text_field(:field_name, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Field value</label>
+        <%= text_field(:field_value, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+		
+		  <br/>
+		  
+      <div class="field has-text-centered">
+       <%= submit_tag("Send", :class => "button has-background-dark has-text-light") %>
+      </div>
+		  
+		<% end %>
+        
+        </div></div>
+      </div>
+      <br />
+      
+      <div class="card has-background-dark has-text-light">
+        <div class="card-header"><p class="card-header-title has-text-light">Output</p></div>
+        <div class="card-content"><div class="content">
+          <%= @discord_url %> <br/>
+          <%= @discord_response %>
+          </div></div>
+      </div>
+      <br />
+      
+    </div>
+  </div>
+  
+</section>

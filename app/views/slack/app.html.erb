@@ -1,0 +1,141 @@
+<section class="columns is-fullheight has-background-black-ter">
+  
+  <aside class="column is-2 is-narrow-mobile is-fullheight section">
+    <p class="menu-label is-hidden-touch has-text-light">Navigation</p>
+    <ul class="menu-list">
+      <li>
+        <a href="/" class="has-text-light">
+          <span class="icon"><i class="fa fa-home"></i></span> Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="has-text-light">
+          <span class="icon"><i class="fa fa-magic"></i></span> Magic
+        </a>
+
+        <ul>
+          <li>
+            <a href="/json-to-hash-ruby.rb" class="has-text-light">
+              JSON to Hash ruby
+            </a>
+          </li>
+          <li>
+            <a href="/lorem-ipsum-generator.rb" class="has-text-light">
+              Lorem Ipsum generator
+            </a>
+          </li>
+          <li>
+            <a href="/discord-webhook-test.rb" class="has-text-light">
+              Discord webhook test
+            </a>
+          </li>
+          <li>
+            <a href="/slack-webhook-test.rb" class="is-active has-background-dark has-text-light">
+              Slack webhook test
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="container column is-10">
+    <div class="section">
+
+      <div class="card has-background-dark has-text-light">
+        <div class="card-header"><p class="card-header-title has-text-light">Slack Webhook test</p></div>
+        <div class="card-content"><div class="content">
+          
+
+<%= form_tag("slack-webhook-test.rb") do %>
+          
+		  <div class="field">
+		  <label class="label has-text-light">URL webhook<font color="red">*</font></label>
+		  <%= text_field(:url, :field, :class => "input is-blue") %> 
+		  </div>
+			  
+      
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Username</label>
+        <%= text_field(:username, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+        
+        <div class="column">
+        <div class="field">
+          <label class="label has-text-light">Color</label>
+          <div class="control">
+            <div class="select is-dark">
+             <%= select_tag(:color, options_for_select([["Grey", "#8c8c8c"],["White", "#ffffff"],["Black", "#000000"],["Red", "#ff0000"],["Blue", "#0000ff"],["Green", "#00cc00"],["Orange", "#ff8c1a"],["Purple", "#9900ff"]], params[:color] )) %>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+		  <div class="columns">
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Title</label>
+          <%= text_field(:title, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="field">
+        <label class="label has-text-light">Url Title</label>
+          <%= text_field(:url_title, :field, :class => "input is-blue") %> 
+        </div>
+        </div>
+		  </div>
+			  
+			  
+		  <div class="columns">
+		  
+		  <div class="column">
+		  <div class="field">
+		  <label class="label has-text-light">Post</label>
+        <%= text_area(:post, :field, :class => "textarea") %> 
+		  </div>
+		  </div>
+		  
+		  <div class="column">
+		  <div class="field">
+		  <label class="label has-text-light">Text</label>
+        <%= text_area(:text, :field, :class => "textarea") %> 
+		  </div>
+		  </div>
+		  
+		  </div>
+
+		  
+		  <div class="field">
+		  <label class="label has-text-light">Url image</label>
+        <%= text_field(:image, :field, :class => "input is-blue") %> 
+		  </div>
+        
+		  <div class="field has-text-centered">
+		  <%= submit_tag("Send", :class => "button has-background-dark has-text-light") %>
+		  </div>
+
+<% end %>
+        
+        </div></div>
+      </div>
+      <br />
+      
+      <div class="card has-background-dark has-text-light">
+        <div class="card-header"><p class="card-header-title has-text-light">Output</p></div>
+        <div class="card-content"><div class="content">
+          <%= @slack_url %> <br/>
+          <%= @slack_response %>
+        </div></div>
+      </div>
+      <br />
+      
+    </div>
+  </div>
+  
+</section>

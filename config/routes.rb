@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  # homepage
+  # Homepage
   root to: 'index#home'
   
   # JSON to hash ruby
@@ -10,5 +10,13 @@ Rails.application.routes.draw do
   # Lorem ipsum generator
   get '/lorem-ipsum-generator.rb', to: 'lorem#app'
   post '/lorem-ipsum-generator.rb', to: 'lorem#generate'
+  
+  # Discord webhook test
+  get '/discord-webhook-test.rb', to: 'discord#app'
+  post '/discord-webhook-test.rb', to: 'discord#post'
+  
+  # Slack webhook test
+  get '/slack-webhook-test.rb', to: 'slack#app'
+  post '/slack-webhook-test.rb', to: 'slack#post'
   
 end
