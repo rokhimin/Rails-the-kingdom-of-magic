@@ -6,7 +6,6 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
-# start rails server fast setup
 task :s do
   sh 'rails s -b 0.0.0.0 -p 3000'
 end
