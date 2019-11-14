@@ -15,6 +15,8 @@ https://the-kingdom-of-magic.herokuapp.com
 - [x] Navigation menu
 - [x] JSON to hash ruby
 - [x] Lorem ipsum generator
+- [x] Discord webhook test
+- [x] Slack webhook test
 
 # License
 MIT License.
