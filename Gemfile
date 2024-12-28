@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '3.0.0'
 
 gem 'rails', '~> 6.0.0'
-gem 'pg', '~> 1.1.4'
+# gem 'pg', '~> 1.1.4'
+gem "sqlite3", "~> 1.4"
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 6.0.0'
 gem 'jbuilder', '~> 2.7'
@@ -14,6 +15,7 @@ gem 'faker', "~> 2.7.0"
 gem 'discordrb', "~> 3.3.0"
 gem 'slack-incoming-webhooks', "~> 0.2.0"
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'psych', '< 4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
